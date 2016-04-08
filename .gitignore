@@ -1,0 +1,30 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+string word, respuesta;
+
+string palindromo(string word){
+  string backwards;
+  cout << "dime una palabra porfavor: "<<endl;
+  cin >> word;
+  cout << endl;
+
+  int large = word.length();
+  for (int x = large - 1; x >= 0; x--){
+  backwards += word[x];
+  }
+
+  if (backwards == word){
+  fin = "tu palabra es un palindromo";
+  }
+
+  else
+  respuesta = "tu palabra no es un palindromo";
+  return respuesta;
+}
+int main(){
+  cout << palindromo(respuesta);
+  return 0;
+}
